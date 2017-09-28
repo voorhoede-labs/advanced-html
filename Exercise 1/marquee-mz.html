@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>&lt;marquee&gt; - HTML | MDN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://developer.cdn.mozilla.net/static/build/styles/mdn-skinny.b2d9061c8deb.css" rel="stylesheet" type="text/css"/>
+    <link href="https://developer.cdn.mozilla.net/static/build/styles/wiki-skinny.8dcc315e0a59.css" rel="stylesheet" type="text/css"/>
+    <link href="https://developer.cdn.mozilla.net/static/build/styles/locale-en-US.7e45c23d7d30.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+    <ul id="nav-access">
+        <li><a href="#document-main" id="skip-main">Skip to main content</a></li>
+        <li><a id="skip-language" href="#language">Select language</a></li>
+        <li><a href="#q" id="skip-search">Skip to search</a></li>
+    </ul>
+
+    <header id="main-header">
+        <div class="center">
+            <a href="/en-US/" class="logo">MDN Web Docs</a>
+            <nav class="nav-main">
+                <ul>
+                    <li class="nav-main-item">
+                        <a href="/en-US/docs/Web">Technologies</a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="/en-US/docs/Learn">References & Guides</a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="/en-US/docs/MDN/Feedback">Feedback</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content will go here -->
+    <main id="content">
+
+        <!-- heading -->
+        <div class="document-head">
+            <div class="center">
+
+                <!-- crumbs -->
+                <nav class="crumbs">
+                    <ol>
+                        <li><a href="/en-US">MDN</a></li>
+                        <li class="crumb"><a href="/en-US/docs/Web">Web technology for developers</a></li>
+                        <li class="crumb"><a href="/en-US/docs/Web/HTML">HTML</a></li>
+                        <li class="crumb"><a href="/en-US/docs/Web/HTML/Element">HTML element reference</a></li>
+                        <li class="crumb">&lt;marquee&gt;</li>
+                    </ol>
+                </nav>
+
+
+                <!-- action buttons -->
+                <div class="document-actions">
+                    <ul class="page-buttons">
+                        <li>
+                            <button class="transparent">
+                                <span>Languages</span><i class="icon-language"></i>
+                            </button>
+                        </li>
+
+                        <li class="page-buttons-edit">
+                            <a href="/en-US/docs/Web/HTML/Element/marquee$edit" class="button">
+                                Edit<i class="icon-pencil"></i>
+                            </a>
+                        </li>
+
+                        <li class="page-buttons-advanced">
+                            <button class="only-icon">
+                                <span>Advanced</span><i aria-hidden="true" class="icon-cog"></i>
+                            </button>
+                            <div class="submenu">
+                                <div class="submenu-column">
+                                    <div class="title">Advanced</div>
+                                    <ul>
+                                        <li>
+                                            <a href="/en-US/docs/Web/HTML/Element/marquee$history">History</a>
+                                        </li>
+
+                                        <li class="page-print">
+                                            <a href="#">Print this article</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="document-title">
+                    <h1>&lt;marquee&gt;</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="center clear">
+
+            <div class="wiki-main-content" id="document-main">
+                <div class="center">
+                    <!-- start the main content container -->
+                    <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+                        <!-- content row with three strips -->
+                        <div class="column-container column-container-reverse">
+
+                            <!-- TOC, approvals, etc -->
+                            <div class="column-strip wiki-column" id="wiki-right">
+
+                                <!-- table of contents -->
+                                <div id="toc" class="toc toggleable">
+                                    <a href="#toc" class="title toggler">In This Article</a>
+                                    <ol class="toggle-container">
+                                        <li><a href="#Attributes">Attributes</a></li>
+                                        <li><a href="#Event_handlers">Event handlers</a></li>
+                                        <li><a href="#Methods">Methods</a></li>
+                                        <li><a href="#Examples">Examples</a></li>
+                                        <li><a href="#Specifications">Specifications</a></li>
+                                        <li><a href="#Browser_compatibility">Browser compatibility</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- center: main article content -->
+                            <div id="wiki-content" class="column-half wiki-column text-content">
+
+                                <!-- just the article content -->
+                                <article id="wikiArticle">
+                                    <div>
+                                        <div class="overheadIndicator obsolete obsoleteHeader">
+                                            <p>
+                                                <strong><i class="icon-trash"></i>Obsolete</strong><br>
+                                                This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        The HTML <code>&lt;marquee&gt;</code> element is used to insert a scrolling area of text. You can control what happens when the text reaches the edges of its content area using its attributes.
+                                    </p>
+
+                                    <div class="warning">
+                                        <p>
+                                            The <code>&lt;marquee&gt;</code> element is <strong>obsolete</strong> and must not be used. While some browsers still support it, it's not required.
+                                        </p>
+                                    </div>
+
+                                    <h2 id="Attributes">Attributes</h2>
+                                    <dl>
+                                        <dt>
+                                            <strong id="attr-behavior"><code>behavior</code></strong>
+                                        </dt>
+                                        <dd>Sets how the text is scrolled within the marquee. Possible values are <code>scroll</code>, <code>slide</code> and <code>alternate</code>. If no value is specified, the default value is <code>scroll</code>.</dd>
+                                        <dt><strong id="attr-bgcolor"><code>bgcolor</code></strong></dt>
+                                        
+                                        <dd>Sets the background color through color name or hexadecimal value.</dd>
+                                        
+                                        <dt><strong id="attr-direction"><code>direction</code></strong></dt>
+                                        <dd>Sets the direction of the scrolling within the marquee. Possible values are <code>left</code>, <code>right</code>, <code>up</code> and <code>down</code>. If no value is specified, the default value is <code>left</code>.</dd>
+                                        
+                                        <dt><strong id="attr-height"><code>height</code></strong></dt>
+                                        <dd>Sets the height in pixels or percentage value.</dd>
+                                        
+                                        <dt><strong id="attr-hspace"><code>hspace</code></strong></dt>
+                                        <dd>Sets the horizontal margin</dd>
+                                        
+                                        <dt><strong id="attr-loop"><code>loop</code></strong></dt>
+                                        <dd>Sets the number of times the marquee will scroll. If no value is specified, the default value is −1, which means the marquee will scroll continuously.</dd>
+                                        
+                                        <dt><strong id="attr-scrollamount"><code>scrollamount</code></strong></dt>
+                                        <dd>Sets the amount of scrolling at each interval in pixels. The default value is 6.</dd>
+                                        
+                                        <dt><strong id="attr-scrolldelay"><code>scrolldelay</code></strong></dt>
+                                        <dd>Sets the interval between each scroll movement in milliseconds. The default value
+                                            is 85. Note that any value smaller than 60 is ignored and the value 60 is used
+                                            instead, unless <code>truespeed</code> is specified.</dd>
+                                        
+                                        <dt><strong id="attr-truespeed"><code>truespeed</code></strong></dt>
+                                        <dd>By default, <code>scrolldelay</code> values lower than 60 are ignored. If <code>truespeed</code> is present, those values are not ignored.</dd>
+                                        
+                                        <dt><strong id="attr-vspace"><code>vspace</code></strong></dt>
+                                        <dd>Sets the vertical margin in pixels or percentage value.</dd>
+                                        
+                                        <dt><strong id="attr-width"><code>width</code></strong></dt>
+                                        <dd>Sets the width in pixels or percentage value.</dd>
+                                    </dl>
+
+                                    <h2 name="Event_handlers" id="Event_handlers">Event handlers</h2>
+                                    <dl>
+                                        <dt><strong id="attr-onbounce"><code>onbounce</code></strong></dt>
+                                        <dd>Fires when the marquee has reached the end of its scroll position. It can only fire when the behavior attribute is set to <code>alternate</code>.</dd>
+                                        
+                                        <dt><strong id="attr-onfinish"><code>onfinish</code></strong></dt>
+                                        <dd>Fires when the marquee has finished the amount of scrolling that is set by the loop attribute. It can only fire when the loop attribute is set to some number that is greater than 0.</dd>
+                                        
+                                        <dt><strong id="attr-onstart"><code>onstart</code></strong></dt>
+                                        <dd>Fires when the marquee starts scrolling.</dd>
+                                    </dl>
+
+                                    <h2 name="Methods" id="Methods">Methods</h2>
+                                    <dl>
+                                        <dt>start</dt>
+                                        <dd>Starts scrolling of the marquee.</dd>
+                                        
+                                        <dt>stop</dt>
+                                        <dd>Stops scrolling of the marquee.</dd>
+                                    </dl>
+
+                                    <h2 id="Examples">Examples</h2>
+                                    <pre class="brush: html">&lt;marquee&gt;This text will scroll from right to left&lt;/marquee&gt;
+
+&lt;marquee direction="up"&gt;This text will scroll from bottom to top&lt;/marquee&gt;
+
+&lt;marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid"&gt;
+  &lt;marquee behavior="alternate"&gt;
+    This text will bounce
+  &lt;/marquee&gt;
+&lt;/marquee&gt;</pre>
+
+                                    <p>
+                                        <iframe src="https://mdn.mozillademos.org/en-US/docs/Web/HTML/Element/marquee$samples/Examples?revision=1305361" class="live-sample-frame sample-code-frame"
+                                            width="600" height="450" id="frame_Examples" frameborder="0"></iframe>
+                                    </p>
+
+                                    <h2 id="Specifications">Specifications</h2>
+
+                                    <table class="standard-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Specification</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Comment</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="https://html.spec.whatwg.org/multipage/obsolete.html#the-marquee-element-2"
+                                                        class="external" lang="en" hreflang="en">HTML Living Standard<br><small lang="en-US">The definition of '&lt;marquee&gt;' in that specification.</small></a></td>
+                                                <td><span class="spec-Living">Living Standard</span></td>
+                                                <td>Make it obsolete in favor of CSS but define its expected behavior, for backward compatibility.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.w3.org/TR/html5/obsolete.html#the-marquee-element-0" class="external">HTML5<br><small lang="en-US">The definition of '&lt;marquee&gt;' in that specification.</small></a>
+                                                </td>
+                                                <td><span class="spec-REC">Recommendation</span></td>
+                                                <td>Make it obsolete in favor of CSS but define its expected behavior, for backward compatibility.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </article>
+
+                                <!-- contributors -->
+                                <div class="wiki-block contributors">
+                                    <h2 class="offscreen">Document Tags and Contributors</h2>
+                                    <div class="tag-attach-list contributors-sub">
+                                        <i aria-hidden="true" class="icon-tags icon-fw"></i>
+                                        <strong>Tags:</strong>&nbsp;
+                                        <ul class="tags tags-small">
+                                            <li><a href="/en-US/docs/tag/Element">Element</a></li>
+                                            <li><a href="/en-US/docs/tag/HTML">HTML</a></li>
+                                            <li><a href="/en-US/docs/tag/marquee">marquee</a></li>
+                                            <li><a href="/en-US/docs/tag/Obsolete">Obsolete</a></li>
+                                            <li><a href="/en-US/docs/tag/Reference">Reference</a></li>
+                                            <li><a href="/en-US/docs/tag/Web">Web</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="nav-footer" class="nav-footer">
+        <div class="center">
+            <a href="/en-US/" class="nav-footer-logo">MDN Web Docs</a>
+            <div class="footer-group footer-group-mdn">
+                <h2 class="footer-title">MDN</h2>
+                <ul class="footer-list">
+                    <li><a href="/en-US/docs/Web">Web Technologies</a></li>
+                    <li><a href="/en-US/docs/Learn">Learn Web Development</a></li>
+                    <li><a href="/docs/MDN/About">About MDN</a></li>
+                    <li><a href="/en-US/docs/MDN/Feedback">Feedback</a></li>
+                    <li class="footer-social">
+                        <a href="https://twitter.com/mozdevnet" class="only-icon">
+                            <i class="icon-twitter"></i> <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li class="footer-social">
+                        <a href="https://github.com/mdn/" class="only-icon"><i class="icon-github"></i> <span>GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="https://mozilla.org" class="nav-footer-mozilla">Mozilla</a>
+            <div class="footer-group footer-group-mozilla">
+                <h2 class="footer-title">Mozilla</h2>
+                <ul class="footer-list">
+                    <li><a href="https://www.mozilla.org/about/">About</a></li>
+                    <li><a href="https://www.mozilla.org/contact/">Contact Us</a></li>
+                    <li><a href="https://donate.mozilla.org/?utm_source=developer.mozilla.org&utm_medium=referral&utm_content=footer">Donate</a></li>
+                    <li><a href="https://www.mozilla.org/firefox/?utm_source=developer.mozilla.org&utm_campaign=footer&utm_medium=referral">Firefox</a></li>
+                    <li class="footer-social"><a href="https://twitter.com/mozilla" class="only-icon"><i aria-hidden="true" class="icon-twitter"></i> <span>Twitter</span></a></li>
+                    <li class="footer-social"><a href="https://www.facebook.com/mozilla" class="only-icon"><i aria-hidden="true" class="icon-facebook"></i> <span>Facebook</span></a></li>
+                    <li class="footer-social"><a href="https://www.instagram.com/mozillagram/" class="only-icon"><i aria-hidden="true" class="icon-instagram"></i> <span>Instagram</span></a></li>
+                </ul>
+            </div>
+
+            <ul class="footer-tos">
+                <li><a href="https://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+                <li><a href="https://www.mozilla.org/privacy/websites/">Privacy</a></li>
+                <li><a href="https://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            </ul>
+
+            <div class="contentinfo">
+                <p>&copy; 2005-2017 Mozilla and individual contributors.</p>
+                <p>Content is available under <a href="/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

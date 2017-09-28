@@ -1,0 +1,42 @@
+.tabs {
+	margin-bottom: 2rem;
+}
+
+.tabs .tabs-list,
+.tabs .tab-content {
+	margin-bottom: 1rem;
+}
+
+.tabs.enhanced .tabs-list {
+	margin-bottom: 0;
+}
+
+.tabs.enhanced .tab {
+	display: inline-block;
+	margin-bottom: -1px;
+}
+
+.tabs.enhanced .tab a {
+	display: block;
+	padding: .5rem 1rem;
+	background: #12353c;
+	border: 1px solid #12353c;
+	color: #fff;
+	text-decoration: none;
+}
+
+.tabs.enhanced .tab a.tab--selected {
+	background: #ecdb4e;
+	color: #12353c;
+}
+
+.tabs.enhanced .tab-content {
+	margin: 0;
+	padding: 1rem;
+	background: #e0e1ef;
+	border: 1px solid #12353c;
+}
+
+.hidden {
+	display: none;
+}

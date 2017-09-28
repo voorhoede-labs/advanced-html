@@ -1,0 +1,25 @@
+.expandable {
+	margin: 0 auto;
+	padding: 1.5em;
+	max-width: 500px;
+	background: #e0e1ef;
+}
+
+.expandable__trigger {
+	width: 100%;
+	text-align: left;
+	font-weight: normal;
+	border: 1px solid #12353c;
+	cursor: pointer;
+}
+
+.expandable__content {
+	padding: 2em;
+	background: #f3f3f3;
+	border: 1px solid #12353c;
+	border-top: none;
+}
+
+.hidden {
+	display: none;
+}

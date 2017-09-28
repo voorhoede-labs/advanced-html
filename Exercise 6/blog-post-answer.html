@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Using ARIA in HTML | HTML5 Doctor</title>
+</head>
+<body>
+    <main>
+        <article vocab="http://schema.org/" typeof="Blog">
+            <header>
+                <h1 property="name">Using ARIA in HTML</h1>
+                <small><time property="datePublished" datetime="2014-06-21">Saturday, June 21st, 2014</time> by <a href="http://html5doctor.com/author/stevef/" title="Posts by Steve Faulkner" property="author" typeof="person">Steve Faulkner</a>.</small>
+            </header>
+            <div class="entry">
+                <p>ARIA (<a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a> if you want to be formal) is a set of attributes that you can add to <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#elements">HTML elements</a>.</p>
+                <p>These attributes communicate role, state and property semantics to <a href="http://en.wikipedia.org/wiki/Assistive_technology">assistive technologies</a> via the <a href="http://www.w3.org/WAI/PF/aria-implementation/#def_accessibility_api">accessibility APIs</a> implemented in browsers. The <a href="http://www.w3.org/html/wg/drafts/html/master/">W3C HTML specification</a> provides information about which ARIA attributes are allowed to be used on each HTML element in section <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria"><span class="secno">3.2.7 </span>WAI-ARIA</a>.
+                <h2>Developer (un)friendly information</h2>
+                <p>The requirements specified in section <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria"><span class="secno">3.2.7 </span>WAI-ARIA</a> are not in a form which could be considered web developer <em>friendly</em>. They are presented in 2 large tables and <strong>only include</strong> features that have constraints. i.e. if you can use any ARIA attribute, the element is not listed, this is because the primary purpose of this information is for browser and conformance checker implementers, not developers like you and I. Furthermore to find out what ARIA attributes can be used on a particular element, in the past would involve navigating away from an element definition to the ARIA section then going through the tables to find the desired element or attribute, to locate its ARIA rules.</p>
+                <h2>Developer friendly information</h2>
+                <p>Over the past few months the <a href="http://www.w3.org/html/wg/drafts/html/master/">W3C HTML specification</a> has been updated to include the ARIA information, formerly tucked away or absent, now presented <em>in your face</em>, in the introductory section of each element definition.</p>
+                <p>In the example below, the introductory section of the <a href="http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#the-picture-element">picture element</a> definition now includes information about allowed ARIA roles and property attributes, so developers can quickly find the info without having to hunt about in the spec. In the case of the (newly added) <code>picture</code> element, the <code>role</code> attribute cannot be used and only <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#index-aria-global">global ARIA attributes</a> are allowed. The same ARIA information can be found in the introductory section of <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#elements">every element</a> in the HTML specification.</p>
+                <p><a href="http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#the-picture-element">
+                        <img src="http://html5doctor.com/wp-content/uploads/2014/06/picture.png" alt="picture element definition" width="742" height="586"/>
+                    </a>
+                </p>
+                <p>If an element can have roles set it is stated in the intro, for example the <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-button-element">button</a> element intro includes all allowed ARIA role values and indicates the default role for the element, which in most circumstances <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#aria-usage-note">does not need</a> to be set. Each role is linked to a description, within the <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#allowed-aria-roles,-states-and-properties">ARIA reference section</a>, of the HTML spec, which also includes a list of allowed <code>aria-*</code> attributes for each role value, with additional links to the ARIA specification information for all role, states and properties.</p>
+                <p>
+                    <a href="http://www.w3.org/html/wg/drafts/html/master/forms.html#the-button-element">
+                        <img src="http://html5doctor.com/wp-content/uploads/2014/06/button.png" alt="button" width="686" height="141"/>
+                    </a>
+                </p>
+                <p>The intent of these additions to the <a href="http://www.w3.org/html/wg/drafts/html/master/">HTML specification</a> is to make it easier for developers to <em>get at</em> the information they need to make <em>accessible</em> things with HTML. <strong>Feedback welcome!</strong></p>
+                <h2>Further Reading</h2>
+                <ul>
+                    <li><a href="http://w3c.github.io/aria-in-html/">Using ARIA in HTML</a> &#8211; a practical guide for developers on how to add accessibility information to HTML elements using ARIA.</li>
+                    <li><a href="http://www.w3.org/WAI/PF/aria-practices/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 1.0 Authoring Practices</a> &#8211; An author&#8217;s guide to understanding and implementing Accessible Rich Internet Applications
+                        <ul>
+                            <li><a href="http://www.w3.org/WAI/PF/aria-practices/#aria_ex">widget design patterns</a></li>
+                        </ul>
+                    </li>
+                    <li>HTML 5.1 section <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria"><span class="secno">3.2.7 </span>WAI-ARIA</a></li>
+                </ul>        
+            </div>
+            
+            <aside class="bio">
+                <h4>
+                    <a href="http://html5doctor.com/author/stevef/" title="Posts by Steve Faulkner">Steve Faulkner</a>
+                </h4>
+                <div >
+                    <p>This article was written by <a href="http://html5doctor.com/author/stevef/" title="Posts by Steve Faulkner">Steve Faulkner</a>. An Australian living in London,  works for The Paciello Group, a well-known web accessibility consultancy, and is a co-editor of the HTML5 spec at W3C</p>
+                    <img alt='' src='http://2.gravatar.com/avatar/81d4896889881ab794df2415b6de3a37?s=128&#038;d=mm&#038;r=g' height='128' width='128' />
+                </div>
+            </aside>
+            
+            <section id="comments">
+                <h3>5 Responses on the article “Using ARIA in HTML”</h3>
+                <li class="comment" typeof="Comment">
+                    <div class="author">
+                        <cite property="author" typeof="person">Gwyn</cite>
+                        <span>says:</span>
+                    </div>
+                    <div>
+                        <a href="http://html5doctor.com/using-aria-in-html/#comment-65049">
+                            June 22, 2014 at 11:15 am
+                        </a>
+                    </div>
+                    <p property="comment">Thanks for the post Steve. I&#8217;d really like to see more and better use of ARIA across the web but have found that it&#8217;s not been well described in terms of the developer community needs. This is a really good enhancement to the HTML spec which, I hope, will see increased and improved use of ARIA.</p>
+                </li>
+                
+                <li class="comment" typeof="Comment">
+                    <div class="author">
+                        <cite><a href='http://smartart.it' property="author" typeof="person">The Peach</a></cite>
+                        <span>says:</span>
+                    </div>
+            
+                    <div>
+                        <a href="http://html5doctor.com/using-aria-in-html/#comment-65551">
+                            June 22, 2014 at 5:28 pm
+                        </a>
+                    </div>
+                    <p property="comment">At last! Saying it was tedious is an under-statement. Glad someone did something about it :) <br />
+                    Thanks for the informative article</p>
+            </section>
+                
+        </article>
+    </main>
+</body>
+</html>
